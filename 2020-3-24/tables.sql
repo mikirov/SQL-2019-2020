@@ -1,13 +1,6 @@
 drop database if exists school; 
-
 create database school;
-
 use school;
-
-drop table if exists person;
-drop table if exists weight_data;
-
-drop trigger if exists insert_weight_data;
 
 create table person(
 	id int primary key auto_increment not null,

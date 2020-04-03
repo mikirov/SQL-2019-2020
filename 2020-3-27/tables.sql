@@ -2,9 +2,6 @@ drop database if exists ex2;
 create database ex2;
 use ex2;
 
-drop table if exists student;
-drop table if exists grades;
-
 create table student(
 	id int primary key auto_increment not null,
     name varchar(50) not null,

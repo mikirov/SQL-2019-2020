@@ -19,7 +19,7 @@ delimiter $;
 create trigger delete_weight_data after delete on weight_data
 for each row
 begin
-update person set weight = (select avg(weight) from weight_data where weight_data.person_id = new.person_id);
+update person set weight = (select avg(weight) from weight_data where weight_data.person_id = old.person_id);
 end;
 delimiter ;
 
